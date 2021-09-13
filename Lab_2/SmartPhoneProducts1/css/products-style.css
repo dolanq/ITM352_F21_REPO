@@ -1,4 +1,26 @@
-body{
-    width: 800px;
-     margin: 0 auto;
+	/* General */  
+	body{
+        text-align:center;
+        width: 800px;
+         margin: 0 auto;
+    }
+	/* Typography */  
+	
+	/* block styling */  
+	main{
+    	display: flex;
+    	flex-flow: row wrap;
+    	justify-content: space-around;
+	/* Form styling */  
+	
+	/* Styling the products display */ 
+    div{
+    	border: 5px solid black;
+    	display: flex;
+    }
+ 
+
+
+
 }
+
