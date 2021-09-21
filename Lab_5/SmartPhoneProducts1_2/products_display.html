@@ -7,8 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <script>
        const store_name = "Sneed's Feed & Seed (Formerly Chuck's) "
-       var hits = 1;
-       spins = 10;
    </script>
     <title>Smartphone Products</title>
 </head>
@@ -16,7 +14,11 @@
     <header>
    
     <h1> <script> document.write(store_name); </script> Used Smart Phone Store</h1>
-    
+    <p style="text-align: center; font-weight: bold;">
+        Hits:<span id="hits_span">0</span>
+        Spins:<span id="spins_span">0</span>
+        </p>
+        
 </header>
     <div><main>
     <section class="item" onmouseover="this.className='item rotate';" onclick="this.className='item';">
@@ -47,6 +49,13 @@
 </main></div>
 <footer>
 <h1>Your One Stop Phone Shop from <script> document.write(store_name); </script></h1>
+<script>
+    var hits = 1;
+    var spins = 10;
+    console.log(hits);
+    console.log(spins);
+  </script>
+  
 </footer>
 </body>
 </html>
