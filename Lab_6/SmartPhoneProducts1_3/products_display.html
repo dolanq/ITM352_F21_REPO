@@ -23,7 +23,7 @@
 </header>
     <div>
     <main>
-    <section class="item" onmouseover="this.className='item rotate'; spins_span.innerHTML=spins++" onclick="this.className='item';hits_span.innerHTML=hits++;">
+    <section class="item" onmouseover="this.className='item rotate'; spins_span.innerHTML=spins++; hit_spin_span. innerHTML = (hits/spins).toFixed(2);" onclick="this.className='item';hits_span.innerHTML=hits++;hit_spin_span. innerHTML = (hits/spins).toFixed(2);">
         <h2>HTC</h2>
         <p>&dollar;40.00 </p>
         <image src= http://dport96.github.io/ITM352/morea/080.flow-control-II/HTC.jpg>
@@ -54,7 +54,7 @@
 <script>
     
     var hits = 1;
-    var spins = 10;
+    var spins = 5;
     console.log(hits);
     console.log(spins);
     hits_span.innerHTML = hits;
