@@ -61,9 +61,44 @@
            document.write(`Your One Stop For Used Phones-       ${first_name[0]}.${last_name[0]}. \'s`); 
             </script>
             </h1></th></tr>
-        <tr><td>1.</td><td><br />Copyright @ Dan Port</td></tr>
-        <tr><td>2.</td><td>2021</td></tr>
-        <tr><td>3.</td><td>11:15 AM</td></tr>
+        <tr><td>
+            <script> 
+            var line = 1  
+            document.write(`${line}.`);
+            </script>
+        </td><td><br />Copyright @ 
+        <script>
+          
+        document.write(`${first_name} ${last_name}`);
+        </script></td></tr>
+        <tr><td>
+            <script> 
+            var line2 = 2  
+            document.write(`${line2}.`);
+            </script>
+            </td><td> 
+                <script>  
+                 now = new Date();  
+                 year = now.getFullYear();
+                document.write(`${year}`);
+                </script>
+                </td></tr>
+        <tr><td>
+            <script> 
+            var line3 = 3 
+            document.write(`${line3}.`);
+            </script>
+            </td><td>
+                <script>  
+                now = new Date();  
+                   hours = (now.getHours() +11) % 12 + 1;
+                  mins = now.getMinutes();
+                  minutes = (mins < 10)? '0'+ mins :mins
+                  AM_PM = (hours < 12)?'AM':'PM'
+                document.write(`${hours}:${minutes} ${AM_PM}`);
+
+                </script>                
+        </td></tr>
     </table>
  
 
