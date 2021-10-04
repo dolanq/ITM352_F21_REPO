@@ -11,31 +11,14 @@ body{
     width: 950px;
     background-color: black;
 }
-img{
-    margin-right: 7px;
-}
-.left{
-    float:left;
-    width: 300px;
-    padding: 1em;
-}
-.right{
-    float:right;
-    width: 300px;
-    padding: 1em;
-}
-.center{
-    margin-left: 300px;
-    margin-right: 300px;
-    padding: 1em;
-}
 ul{
     list-style-type: none;
+    padding-inline-start: 0%;
 }
 li{
     display: inline;
 }
-#navbar a{
-    margin-right: 70px;
-    margin-left: 70px;
+ #navbar{
+    display: flex;
+    justify-content: left;
 }
