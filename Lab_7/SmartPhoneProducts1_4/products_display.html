@@ -29,7 +29,23 @@
 </header>
     <div>
     <main>
-    <section class="item" onmouseover="this.className='item rotate'; spins_span.innerHTML=spins++; hit_spin_span. innerHTML = (hits/spins).toFixed(2);" onclick="this.className='item';hits_span.innerHTML=hits++;hit_spin_span. innerHTML = (hits/spins).toFixed(2);">
+    <section class="item" onmouseover="
+        if(this.className.includes('rotate')!=true ) {
+            this.className='item rotate';  
+            spins_span.innerHTML=spins++; 
+            hit_spin_span. innerHTML = (hits/spins).toFixed(2);
+            over_half ||= (spins < 2*hits) && (hits < spins);
+            win_span.innerHTML = over_half;
+            }"
+            onclick="
+            if(this.className.includes('rotate') ) {
+                this.className='item';
+                hits_span.innerHTML=hits++;
+                over_half ||= (spins < 2*hits) && (hits < spins);
+                hit_spin_span.innerHTML = (hits/spins).toFixed(2); 
+                win_span.innerHTML = over_half;
+            }
+            ">
         <h2>HTC</h2>
         <p>&dollar;40.00 </p>
         <image src= http://dport96.github.io/ITM352/morea/080.flow-control-II/HTC.jpg>
